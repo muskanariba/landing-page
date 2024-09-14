@@ -1,0 +1,218 @@
+
+body {
+    background-color: rgb(24, 24, 24);
+    color: white;
+    overflow: hidden;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.nav-link {
+    color: rgb(225, 140, 0); 
+}
+
+.nav-link:hover {
+    color: rgb(255, 255, 255);
+    transform: scale(1.1);
+}
+
+header {
+    animation: fadeIn 1s ease-in-out;
+    background-color: transparent;
+}
+
+.star {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background-color: white;
+    animation: twinkle 2s infinite;
+    box-shadow: 0 0 10px 2px rgba(225, 225, 225, 0.5);
+}
+.merakitchen1{
+    color: rgb(225, 140, 0); 
+}
+.merakitchen1:hover{
+    color: rgb(255, 255, 255);
+    transform: scale(1.1);
+}
+@keyframes twinkle {
+    0% { opacity: 0.5; }
+    50% { opacity: 1; }
+    100% { opacity: 0.5; }
+}
+
+.navbar {
+    animation: slideInFromTop 1s ease-in-out;
+}
+
+.text {
+    position: relative;
+    top: 5rem;
+    left: 11rem;
+    letter-spacing: 1px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.text h1 {
+    font-weight: bold;
+    font-size: 4rem;
+    font-family: sans-serif;
+    margin-bottom: 10px;
+}
+.text h1:hover{
+    color: rgb(225, 140, 0);
+  
+}
+
+.burger {
+    position: fixed;
+    left: 50%;
+    bottom: 20px;
+    transform: translate(-50%);
+    display: flex;
+    width: 90%;
+    padding: 20px;
+    animation: slideInFromBottom 1s ease-in-out 1.5s backwards;
+}
+
+.burger img {
+    width: 100px;
+    height: 100px;
+    margin-left: 20px;
+    border: 1px solid white;
+    transition: transform 0.3s ease;
+    animation: fadeIn 1s ease-in-out 2s backwards;
+}
+
+.burger img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 30px rgba(225, 225, 225, 0.8);
+}
+
+.burgertoggle img {
+    position: absolute;
+    width: 30%;
+    height: 60%;
+    right: 47px;
+    top: 7rem;
+    filter: drop-shadow(63px 90px 392px white);
+    animation: fadeIn 1s ease-in-out 2.5s backwards;
+}
+
+.burger, .burgertoggle {
+    display: flex;
+}
+
+.burgertoggle img {
+    display: none;
+}
+
+.burgertoggle img.active {
+    display: block;
+}
+
+.merakitchenmain:hover {
+    color: rgb(225, 140, 0);
+    border-radius: 8px;
+    transform: scale(1.1);
+    box-shadow: 0 0 30px rgba(225, 225, 225, 0.8);
+}
+.text p {
+    animation: fadeIn 1s ease-in-out backwards;
+    width: 46%;
+}
+
+.h4 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInFromTop {
+    from {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromBottom {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.btn-66,
+.btn-66 *,
+.btn-66:after,
+.btn-66:before {
+    border: 0 solid;
+    box-sizing: border-box;
+}
+
+.btn-66 {
+    -webkit-tap-highlight-color: transparent;
+    animation: fadeIn 1s ease-in-out backwards;
+    background-color: #000;
+    color:  rgb(255, 255, 255);
+    cursor: pointer;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    /* font-size: 100%; */
+    font-size: 14px;
+    line-height: 1.2;
+    margin: 0;
+    padding: 0;
+    --height: 35px;
+    --progress: 0px;
+    border: 2px solid  rgb(225, 140, 0);
+    border-radius:16px;
+    color: transparent;
+    display: block;
+    line-height: var(--height);
+    overflow: hidden;
+    padding:0px 10px;
+    margin: 5px;
+    position: relative;
+    text-shadow: 0 calc(var(--progress) * -1) #fff, 0 calc(var(--height) - var(--progress)) wheat;
+    text-transform: uppercase;
+    transition: 0.2s;
+}
+
+.btn-66:hover {
+    --progress: var(--height);
+    border-color: rgb(255, 255, 255);
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(225, 225, 225, 0.8);
+}
+
+.btn-66:disabled {
+    cursor: default;
+}
+
+.btn-66 svg {
+    display: block;
+ 
+}
